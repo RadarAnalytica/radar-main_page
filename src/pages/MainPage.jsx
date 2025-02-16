@@ -112,9 +112,8 @@ const MainPage = () => {
           </div>
           <div className='sol-screenshot col-7'>
             <VideoComponent
-              preview={preview}
-              heavyVideoSrc={highQualityVideo}
-              lightVideoSrc={lowQualityVideo}
+              poster={preview}
+              videoMp4={highQualityVideo}
               style={{ width: '100%', height: "auto" }}
             />
           </div>
