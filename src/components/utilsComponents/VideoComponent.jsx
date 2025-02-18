@@ -66,11 +66,11 @@ const VideoComponent = ({
                 autoPlay
                 muted
                 loop
-                preload="auto"
+                preload="metadata"
                 webkit-playsinline="true"
             >
-                {videoWebm && <source src={videoWebm} type="video/webm" />}
                 {videoMp4 && <source src={videoMp4} type="video/mp4" />}
+                {videoWebm && <source src={videoWebm} type="video/webm" />}
             </video>
         </div>
     );
