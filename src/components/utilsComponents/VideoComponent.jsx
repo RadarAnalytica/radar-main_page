@@ -25,7 +25,7 @@ const VideoComponent = ({
         // воспроизвести при загрузке метаданных
         video.addEventListener('loadedmetadata', attemptPlay);
         
-        // воспроизвести при взаимодействии с документом
+        // воспроизвести при скролле или клику/нажатию на страницу
         const playOnInteraction = () => {
             attemptPlay();
             document.removeEventListener('touchstart', playOnInteraction);
